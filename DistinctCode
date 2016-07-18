@@ -1,0 +1,4 @@
+
+ var objGetLatLong = new List<tablename>();
+objGetLatLong = dbconn.tableName.ToList();
+objGetLatLong = objGetLatLong.GroupBy(a => new { a.varLattitude, a.varLongitude }).Select(group => group.First()).ToList();
